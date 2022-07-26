@@ -1,0 +1,23 @@
+{
+    // Verwendet IntelliSense zum Ermitteln möglicher Attribute.
+    // Zeigen Sie auf vorhandene Attribute, um die zugehörigen Beschreibungen anzuzeigen.
+    // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dice",
+            "request": "launch",
+            "mainClass": "Dice",
+            "projectName": "random-generator_b3191290",
+            "vmArgs": "--module-path \"C:/Users/merku/Downloads/Programm Setups/JavaFXSDK/javafx-sdk-18.0.2/lib\" --add-modules javafx.controlls,javafx.fxml",
+        }
+    ]
+}
