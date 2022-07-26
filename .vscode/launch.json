@@ -4,7 +4,20 @@
     // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-
+        {
+            "type": "java",
+            "name": "Launch StartUp",
+            "request": "launch",
+            "mainClass": "StartUp",
+            "projectName": "random-generator_6e7c7ec2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Dice",
+            "request": "launch",
+            "mainClass": "Dice",
+            "projectName": "random-generator_6e7c7ec2"
+        },
         {
             "type": "java",
             "name": "Launch Current File",
@@ -17,7 +30,7 @@
             "request": "launch",
             "mainClass": "Dice",
             "projectName": "random-generator_b3191290",
-            "vmArgs": "--module-path \"C:/Users/merku/Downloads/Programm Setups/JavaFXSDK/javafx-sdk-18.0.2/lib\" --add-modules javafx.controlls,javafx.fxml",
+            "vmArgs": "--module-path \"C:/Users/merku/Downloads/Programm Setups/JavaFXSDK/javafx-sdk-18.0.2/lib\" --add-modules javafx.controlls,javafx.fxml"
         }
     ]
 }

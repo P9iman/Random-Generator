@@ -5,19 +5,19 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="277.0" prefWidth="486.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainSceneController">
    <children>
-      <Label layoutX="145.0" layoutY="26.0" prefHeight="33.0" prefWidth="196.0" text="Random Generator" textAlignment="CENTER" textFill="#2ecea6" AnchorPane.topAnchor="26.0">
+      <Label layoutX="227.0" layoutY="26.0" prefHeight="33.0" prefWidth="196.0" text="Random Generator" textAlignment="CENTER" textFill="#2ecea6" AnchorPane.topAnchor="26.0">
          <font>
             <Font name="Bell MT" size="24.0" />
          </font>
       </Label>
-      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="486.0">
+      <MenuBar layoutY="1.0" prefHeight="25.0" prefWidth="649.0">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
@@ -36,17 +36,25 @@
           </Menu>
         </menus>
       </MenuBar>
-      <Label layoutX="19.0" layoutY="59.0" prefHeight="49.0" prefWidth="447.0" text="Welcome to the Random Generator you can choose between the following options" textAlignment="CENTER">
+      <Label layoutX="102.0" layoutY="59.0" prefHeight="49.0" prefWidth="447.0" text="Welcome to the Random Generator you can choose between the following options" textAlignment="CENTER">
          <font>
             <Font name="System Italic" size="12.5" />
          </font>
       </Label>
-      <ImageView fitHeight="79.0" fitWidth="118.0" layoutX="19.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="79.0" fitWidth="118.0" layoutX="27.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="79.0" fitWidth="118.0" layoutX="184.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
-      <ImageView fitHeight="79.0" fitWidth="118.0" layoutX="341.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true" />
-      <Button layoutX="52.0" layoutY="213.0" mnemonicParsing="false" onAction="#o" text="Dice Roll" />
-      <Button layoutX="211.0" layoutY="213.0" mnemonicParsing="false" text="Coin Flip" />
-      <Button layoutX="346.0" layoutY="213.0" mnemonicParsing="false" text="Random Number" />
+      <ImageView fx:id="diceIMG" fitHeight="113.0" fitWidth="156.0" layoutX="62.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/rolling-dices.png" />
+         </image></ImageView>
+      <ImageView fx:id="coinIMG" fitHeight="113.0" fitWidth="156.0" layoutX="260.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/coinFlip.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="numberIMG" fitHeight="113.0" fitWidth="156.0" layoutX="471.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/Number_42_Blue.png" />
+         </image></ImageView>
+      <Button fx:id="diceRollBtn" layoutX="64.0" layoutY="272.0" mnemonicParsing="false" onAction="#openDiceRollWindow" prefHeight="49.0" prefWidth="108.0" text="Dice Roll" />
+      <Button fx:id="coinFlipBtn" layoutX="288.0" layoutY="272.0" mnemonicParsing="false" onAction="#openCoinFlipWindow" prefHeight="49.0" prefWidth="108.0" text="Coin Flip" />
+      <Button fx:id="randomNumbBtn" layoutX="487.0" layoutY="272.0" mnemonicParsing="false" onAction="#openRandomNumberWindow" prefHeight="49.0" prefWidth="118.0" text="Random Number" />
    </children>
 </AnchorPane>
