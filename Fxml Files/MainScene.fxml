@@ -43,15 +43,15 @@
       </Label>
       <ImageView fx:id="diceIMG" fitHeight="113.0" fitWidth="156.0" layoutX="62.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/rolling-dices.png" />
+            <Image url="@../Images/rolling-dices.png" />
          </image></ImageView>
       <ImageView fx:id="coinIMG" fitHeight="113.0" fitWidth="156.0" layoutX="260.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/coinFlip.jpg" />
+            <Image url="@../Images/coinFlip.jpg" />
          </image></ImageView>
       <ImageView fx:id="numberIMG" fitHeight="113.0" fitWidth="156.0" layoutX="471.0" layoutY="142.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@Images/Number_42_Blue.png" />
+            <Image url="@../Images/Number_42_Blue.png" />
          </image></ImageView>
       <Button fx:id="diceRollBtn" layoutX="64.0" layoutY="272.0" mnemonicParsing="false" onAction="#openDiceRollWindow" prefHeight="49.0" prefWidth="108.0" text="Dice Roll" />
       <Button fx:id="coinFlipBtn" layoutX="288.0" layoutY="272.0" mnemonicParsing="false" onAction="#openCoinFlipWindow" prefHeight="49.0" prefWidth="108.0" text="Coin Flip" />

@@ -10,12 +10,11 @@ public class StartUp extends Application
     @Override
     public void start(Stage primaryStage) throws Exception {
         //Diese Zeile verbindet die Java mit der FXML Datei 
-        Parent root = FXMLLoader.load(getClass().getResource("MainScene.fxml")); 
+        Parent root = FXMLLoader.load(getClass().getResource("Fxml Files/MainScene.fxml")); 
         Scene scene = new Scene(root); 
+        primaryStage.setTitle("Random Generator");
         primaryStage.setScene(scene);
         primaryStage.show();
-        
-        
     }
 
     public static void main(String[] args) {

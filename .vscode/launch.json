@@ -4,7 +4,13 @@
     // Weitere Informationen finden Sie unter https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        
+        {
+            "type": "java",
+            "name": "Launch StartUp",
+            "request": "launch",
+            "mainClass": "StartUp",
+            "projectName": "random-generator_6cbe454d"
+        },
         {
             "type": "java",
             "name": "Launch StartUp",
